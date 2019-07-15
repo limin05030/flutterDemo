@@ -1,0 +1,157 @@
+name: flutter_app
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # 带未读消息的导航栏
+  bottom_tab_bar:
+    git: https://github.com/LiuC520/flutter_bottom_tab_bar.git
+
+    # 添加sharedPreference依赖
+  shared_preferences: ^0.5.0
+
+  # 国际化支持
+  flutter_localizations:
+    sdk: flutter
+
+  # google map
+  google_maps_flutter: ^0.5.19
+
+  # permission
+  permission_handler: ^3.1.0
+
+  # location https://github.com/Lyokone/flutterlocation
+  location:
+    git:
+      url: git://github.com/Lyokone/flutterlocation.git
+      ref: background_location
+
+  # 蓝牙库
+  flutter_blue: ^0.6.0
+
+  # 获取app信息
+  package_info: ^0.4.0+2
+
+  # 系统界面跳转（如打开手机浏览器、第三方app等等）https://pub.dev/packages/url_launcher
+  url_launcher: ^5.0.3
+
+  # 系统图片选择
+  image_picker: ^0.6.0+12
+
+  # 包含时间格式化工具 https://pub.dev/packages/intl
+  intl: ^0.15.8
+
+  fluttertoast: ^3.1.0
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - images/icon_about_appname.png
+    - images/tabar_maps_normal.png
+    - images/tabar_maps_selected.png
+    - images/tabar_chat_normal.png
+    - images/tabar_chat_selected.png
+    - images/tabar_share_normal.png
+    - images/tabar_share_selected.png
+    - images/tabar_setting_normal.png
+    - images/tabar_setting_selected.png
+    - images/icon_list_next.png
+    - images/btn_main_team.png
+    - images/icon_nav_menber.png
+    - images/btn_chat_location.png
+    - images/btn_chat_sos_close.png
+    - images/btn_chat_sos_open.png
+    - images/btn_chat_voice.png
+    - images/btn_chat_send.png
+    - images/btn_main_fence.png
+    - images/btn_main_map.png
+    - images/btn_main_pin.png
+    - images/btn_main_position.png
+    - images/btn_main_zoom_add.png
+    - images/btn_main_zoom_less.png
+    - images/icon_nav_history.png
+    - images/share_logo_url.png
+    - images/share_bg_fb.png
+    - images/share_icon_fb.png
+    - images/icon_nav_back.png
+    - images/setting_icon_about.png
+    - images/setting_icon_advanced.png
+    - images/setting_icon_connect.png
+    - images/setting_icon_feedback.png
+    - images/setting_icon_general.png
+    - images/setting_icon_manual.png
+    - images/setting_icon_map.png
+    - images/icon_about_applogo.png
+    - images/feedback_scr_add.png
+    - images/feedback_scr_delete.png
+    - images/icon_nav_invitable.png
+    - images/icon_member_blue.png
+    - images/icon_member_gray.png
+    - images/icon_member_online.png
+    - images/icon_member_offline.png
+    - images/notice_member_normal.png
+    - images/notice_member_offline.png
+    - images/icon_fence_online.png
+    - images/icon_fence_offline.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
